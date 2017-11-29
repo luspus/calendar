@@ -1,0 +1,79 @@
+body
+  color: #1b1b1b
+  height: 100%
+  box-sizing: border-box
+
+.dialog-window
+    border: 1px solid $border
+    position: absolute
+    padding: 30px
+    width: 180px
+    height: 80px
+    text-align: center
+    left: 10%
+    top: 50%
+    transform: translateY(-50%)
+    background: #fff
+    box-shadow: 4px 3px 13px 2px  $shadow
+    -webkit-box-shadow: 4px 3px 13px 2px $shadow
+    display: none
+    &__close
+        border: 1px solid $border
+        padding: 5px 10px
+        display: block
+        margin: 25px 0
+        border-radius: 50px
+        cursor: pointer
+        &:hover
+            background: $hover
+            transform: 1
+
+#cal
+    height: 100%
+    width: 100%
+    text-align: center
+    margin: 150px 0
+    &-title
+        text-transform: capitalize
+    &-box
+        display: inline-block  
+        font-family: sans-serif
+    &-table 
+        text-align: center
+        border-collapse: collapse
+        border-spacing: 0
+        &-nc  
+            text-align: center
+            margin: 5px 0
+            width: 100%
+        tr, td,  th 
+            height: 40px
+            width: 40px
+            border: 1px solid $border
+            text-align: center
+            vertical-align: middle
+        th
+            font-weight: bold
+        .cal-day
+            &:hover  
+                background-color: $hover
+                cursor: pointer
+
+.cal-nav 
+    display: flex
+    justify-content: space-between
+    padding: 5px 0
+    button
+        padding: 0 5px
+        border: 0
+        background: transparent
+        color: grey
+        font-weight: bold
+        cursor: pointer
+    &-other-day
+        background-color: #f8f8f8
+        
+.linked 
+    background-color: #3570A0
+    a
+        color: white
